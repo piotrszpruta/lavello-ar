@@ -8,26 +8,11 @@
         {
             "name" : "Scene",
             "nodes" : [
-                0,
-                1
+                0
             ]
         }
     ],
     "nodes" : [
-        {
-            "name" : "Light",
-            "rotation" : [
-                0.16907575726509094,
-                0.7558803558349609,
-                -0.27217137813568115,
-                0.570947527885437
-            ],
-            "translation" : [
-                -0.05607163906097412,
-                2.150160551071167,
-                -1.3147069215774536
-            ]
-        },
         {
             "mesh" : 0,
             "name" : "A",
@@ -39,30 +24,6 @@
             ]
         }
     ],
-    "materials" : [
-        {
-            "doubleSided" : true,
-            "name" : "BodyIN",
-            "pbrMetallicRoughness" : {
-                "metallicFactor" : 0,
-                "roughnessFactor" : 0.850928783416748
-            }
-        },
-        {
-            "doubleSided" : true,
-            "name" : "BodyOUTszary",
-            "pbrMetallicRoughness" : {
-                "baseColorFactor" : [
-                    0.44999998807907104,
-                    0.44999998807907104,
-                    0.44999998807907104,
-                    1
-                ],
-                "metallicFactor" : 0,
-                "roughnessFactor" : 0.850928783416748
-            }
-        }
-    ],
     "meshes" : [
         {
             "name" : "A",
@@ -72,16 +33,14 @@
                         "POSITION" : 0,
                         "NORMAL" : 1
                     },
-                    "indices" : 2,
-                    "material" : 0
+                    "indices" : 2
                 },
                 {
                     "attributes" : {
                         "POSITION" : 3,
                         "NORMAL" : 4
                     },
-                    "indices" : 5,
-                    "material" : 1
+                    "indices" : 5
                 }
             ]
         }
