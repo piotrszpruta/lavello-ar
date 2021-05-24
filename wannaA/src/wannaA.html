@@ -1,0 +1,87 @@
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .options {
+    font-family: Futura, Helvetica Neue, sans-serif;
+    background: #fff;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 10rem;
+    overflow-wrap: normal;
+    padding: 0.5em 1em;
+    right: 10px;
+    top: 10px;
+    position: fixed;
+    width: max-content;
+    height: max-content;
+  }
+
+  .logo {
+    font-family: Futura, Helvetica Neue, sans-serif;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    opacity: 0.5;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .options {
+      font-size: 10px;
+      right: 5px;
+      top: 5px;
+      position: fixed;
+      width: max-content;
+      height: max-content;
+    }
+
+    .logo {
+      font-size: 10px;
+      bottom: 1px;
+      left: 1px;
+    }
+  }
+
+  #ar-button {
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 20px 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 100px;
+    padding: 0px 40px 0px 100px;
+    font-family: Roboto Regular, Helvetica Neue, sans-serif;
+    font-size: 80px;
+    color: #4285f4;
+    height: 120px;
+    line-height: 50px;
+    border-radius: 30px;
+    border: 1px solid #909192;
+    background-image: url("../images/ar.png");
+  }
+</style>
+<model-viewer exposure="1.8" style="width: 100%; height: 100%; top: 0px; position: sticky;flex-grow: 1;" ar
+  ar-modes="quick-look scene-viewer" ar-scale="fixed" camera-orbit="-30deg auto auto"
+  max-camera-orbit="auto 100deg auto" camera-controls src="../models/wannaA.glb" ios-src="../models/wannaA.usd"
+  poster="../images/wannaA.png">
+  <button id="ar-button" slot="ar-button">Zobacz w AR</button>
+  <!--     <div class="options">
+        <p>Wysokość: 69cm</p>
+        <p>Szerokość: 40cm</p>
+        <p>Długość: 160cm</p>
+    </div> -->
+  <div class="logo">
+    <p>Powered by IHelp</p>
+  </div>
+</model-viewer>
