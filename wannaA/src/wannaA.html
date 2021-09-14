@@ -70,7 +70,11 @@
     background-image: url("../images/ar.png");
   }
 </style>
-<model-viewer exposure="1.8" style="width: 100%; height: 100%; top: 0px;  position: sticky;flex-grow: 1;" ar ar-modes="quick-look scene-viewer" ar-scale="fixed" camera-orbit="-30deg auto auto" max-camera-orbit="auto 100deg auto" camera-controls src="../models/wannaA.glb" ios-src="../models/wannaA.usd" scale="2.3 2.3 2.3">
+<script>
+  const modelViewerTransform = document.querySelector("model-viewer#tran");
+  modelViewerTransform.scale = `2.5 2.5 2.5`;
+</script>
+<model-viewer id="tran" exposure="1.8" style="width: 100%; height: 100%; top: 0px;  position: sticky;flex-grow: 1;" ar ar-modes="quick-look scene-viewer" ar-scale="fixed" camera-orbit="-30deg auto auto" max-camera-orbit="auto 100deg auto" camera-controls src="../models/wannaA.glb" ios-src="../models/wannaA.usd">
  <button id="ar-button" slot="ar-button">Zobacz w AR</button>
   <div class="logo">
     <p>Powered by IHelp</p>
