@@ -71,7 +71,9 @@
     ar-modes="web-xr quick-look fallback" ar-scale="fixed" id="reveal" loading="eager" camera-orbit="-30deg auto auto"
     max-camera-orbit="auto 100deg auto" camera-controls src="../models/wannaB.glb" ios-src="../models/wannaB.usd">
     <button id="ar-button" slot="ar-button">Zobacz w AR</button>
-
+<script>
+      document.querySelector("model-viewer").scale='2.3 2.3 2.3';
+    </script>
     <!--     <div class="options">
         <p>Wysokość: 69cm</p>
         <p>Szerokość: 40cm</p>
