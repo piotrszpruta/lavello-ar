@@ -16,4 +16,4 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
 const ModelViewerElement = document.querySelector('model-viewer')
       ModelViewerElement.minimumRenderScale = 1
-      ModelViewerElement.scale = '2.0 2.0 2.0'
+      ModelViewerElement.scale = '2.2 2.2 2.2'
