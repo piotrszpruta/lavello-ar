@@ -1,6 +1,10 @@
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 <style>
+     * {
+    margin: 0;
+    padding: 0;
+  }
     .options {
         font-family: Futura, Helvetica Neue, sans-serif;
         background: #fff;
@@ -68,10 +72,10 @@
   }
 </style>
 <model-viewer style="width: 100%; height: 100%; top: 0px;  position: sticky;flex-grow: 1;" ar
-    ar-modes="web-xr quick-look fallback" ar-scale="fixed" id="reveal" loading="eager" camera-orbit="90deg 60deg 3m" max-camera-orbit="auto 100deg 6m" camera-controls src="../models/wannaC.glb" ios-src="../models/wannaC.usd">
+    ar-modes="web-xr quick-look" ar-scale="fixed" id="reveal" loading="eager" camera-orbit="360deg 60deg 3m" max-camera-orbit="auto 100deg 6m" camera-controls src="../models/wannaC.glb" ios-src="../models/wannaC.usd">
     <button id="ar-button" slot="ar-button">Zobacz w AR</button>
 <script>
-      document.querySelector("model-viewer").scale='2.3 2.3 2.3';
+      document.querySelector("model-viewer").scale='2.2 2.2 2.2';
     </script>
     <!--     <div class="options">
         <p>Wysokość: 69cm</p>
